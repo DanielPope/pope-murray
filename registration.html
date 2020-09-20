@@ -1,0 +1,164 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>PMF</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/cover/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="./dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/home.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">    
+  </head>
+
+  <body class="">
+    <div class="page-container">
+      <header class="masthead mb-auto d-flex p-3 mx-auto flex-column">
+        <div class="inner">
+          <a class="masthead-brand mt-1" href="index.html"><h3>Pope Murray</h3></a>
+          <button class=" sign-in-btn btn btn-outline-secondary ml-2"> Sign Up</button> 
+          <button class=" log-in-btn btn btn-dark ml-2"> Log In</button>   
+          <nav class="nav nav-masthead justify-content-center  mt-1">
+            <a class="nav-link active" href="about.html">About Us</a>
+            <a class="nav-link" href="meet-the-family.html">Meet The Family</a>
+            <a class="nav-link" href="registration.html">Registration</a>
+            <a class="nav-link" href="committee.html">Commitee</a>
+            <a class="nav-link" href="fundraising.html">Fundraising</a>
+            <a class="nav-link" href="faq.html">F.A.Q</a>
+            <a class="nav-link" href="reunion.html">Reunion Info</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <section class=" title-section d-flex flex-column flex-md-row align-items-md-center p-5 bg-light">
+        <h1 class="bd-title mt-0  container">Registration</h1>
+      </section> 
+
+      <main role="main" class="inner cover pt-5 container ">
+
+          <form id="reunionForm" >
+
+            <h2>Household Nickname</h2>
+
+            <div class="form-row pb-5">
+            <input type="text" class="form-control" id="household" name="household">
+            </div>
+
+            <h2>Person Of Contact</h2>
+
+            <div class="form-row">
+                
+              <div class="form-group col-md-6">
+                <label for="name">First Name</label>
+                <input type="text" class="form-control" id="fname" name="fname">
+              </div> 
+
+              <div class="form-group col-md-4">
+                <label for="name">Last Name</label>
+                <input type="text" class="form-control" id="lname">
+              </div> 
+
+              <div class="form-group col-md-2">
+                <label for="gender">Gender</label>
+                <select class="form-control" id="gender" name="gender">
+                  <option>Male</option>w
+                  <option>Female</option>
+                </select>
+              </div>                
+
+            </div>       
+
+            <div class="form-row">               
+
+              <div class="form-group col-md-4">
+                <label for="phone">Email</label>
+                <input type="email"  placeholder="name@email.com" class="form-control" id="email" name="email">
+              </div> 
+
+              <div class="form-group col-md-3">
+                <label for="phone">Phone</label>
+                <input type="tel" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="555-5555-5555" class="form-control" id="phone" name="phone" required>
+            </div>  
+
+            <div class="form-group col-md-3">
+              <label for="phone">Birth Day</label>
+              <input type="date" value="2011-08-19"   class="form-control" id="bday" name="bday">
+            </div>  
+            <div class="form-group col-md-2">
+              <label for="phone">Shirt Size</label>
+              <select class="form-control" id="tshirt" name="tshirt">
+                  <option>S</option>
+                  <option>M</option>
+                  <option>L</option>
+                  <option>XL</option>
+                  <option>XXL</option>
+                  <option>XXXL</option>
+              </select>
+          </div>               
+
+            </div>       
+
+            <div class="form-row">         
+
+              <div class="form-group col-md-4">
+                <label for="phone">Parent Relation</label>
+                <select class="form-control" id="tshirt" name="tshirt">
+                    <option>David Pope</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                    <option>XXXL</option>
+                </select>
+              </div>              
+
+            </div>
+
+            <div class="form-group pb-4">
+                <label>Occupation/ Skills/ Hobbies</label>
+                <textarea class="form-control" name="occupation"></textarea>
+            </div>  
+        
+
+            <h2>Family Members</h2>
+            <hr>
+            <div id="memberSection"></div>          
+            <div class="form-row pb-4 ">
+                <button type="button" class="btn btn-lg btn-block " id="addMember">Add Family Member</button>
+            </div>
+                
+            <button type="submit" class="btn btn-primary">Submit</button>
+            
+          </form>
+      </main>
+
+      <footer class="mastfoot mt-auto p-3">
+        <div class="inner">
+          <!-- <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p> -->
+        </div>
+      </footer>   
+    </div>
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="./js/registration.js"></script>
+</body>
+</html>
